@@ -15,11 +15,19 @@ The main application field of HL7 is HIS/RIS, is mainly the communication specif
     
     EN:The HL7 object is converted to a string
     
+    Parameters:
+    
+      data : HL7标准格式字符串/The HL7 standard format string
+     
   2>parseArray
   
     CHS:将HL7字符串转换为对象
     
     EN:The HL7 string is converted to a object
+    
+    Parameters:
+    
+      data : Hl7标准格式对象/The Hl7 standard format object
     
   3>serializeJson
   
@@ -27,9 +35,34 @@ The main application field of HL7 is HIS/RIS, is mainly the communication specif
     
     EN:The HL7 object will be converted to a custom JSON format
     
+    Parameters:
+    
+      jsonModel : 自定义json模型/Custom JSON model
+      
+      hl7Obj : The Hl7 standard format object
+    
   4>translateObject,setMsh
   
     CHS:将自定义字符串转换为HL7对象
     
     EN:The custom JSON format will be converted to a HL7 object
+    
+    Description:
+       
+       CHS:使用此方法时需要预先调用setMsh方法设置Hl7的头部信息
+       EN:Using this method need to call setMsh setting HL7 MSH
+       
+      setMsh：
+         
+         Parameters:
+         
+             mshObj : MSH对象/MSH object
+             
+      translateObject:
+          
+          Parameters:
+          
+            jsonModel :　自定义json模型/Custom JSON model
+            
+            jsonModelData: json数据集合/JSON data set
     
