@@ -8,3 +8,16 @@ HL7的主要应用领域是HIS/RIS，主要是规范HIS/RIS系统及其设备之
 The main application field of HL7 is HIS/RIS, is mainly the communication specification between HIS/RIS system and its equipment, it relates to each unit and patient information management system, laboratory, pharmacy system, radiation system, charging system etc.. The purpose of the HL7 is the development and the development of hospital data information transmission protocol and the standard, specification of clinical medicine and management information format, reduce the interconnection of hospital information system cost, improve data sharing information between the degree of hospital information system.
 
 ##hl7helper methods to introduce / hl7helper方法介绍
+  1>parseString
+    CHS:将HL7对象转换为字符串
+    EN:The HL7 object is converted to a string
+  2>parseArray
+    CHS:将HL7字符串转换为对象
+    EN:The HL7 string is converted to a object
+  3>serializeJson
+    CHS:将HL7对象转换为自定义JSON格式
+    EN:The HL7 object will be converted to a custom JSON format
+  4>translateObject,setMsh
+    CHS:将自定义字符串转换为HL7对象
+    EN:The custom JSON format will be converted to a HL7 object
+    
