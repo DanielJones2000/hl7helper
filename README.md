@@ -30,7 +30,7 @@ HL7的主要应用领域是HIS/RIS，主要是规范HIS/RIS系统及其设备之
     
       jsonModel : 自定义json模型
       
-      hl7Obj : The Hl7 standard format object
+      hl7Obj : HL7标准对象
     
   4>translateObject,setMsh
   
